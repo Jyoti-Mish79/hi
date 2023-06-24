@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication Demo</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Authentication Demo</h1>
+        </div>
+        <div class="content">
+            <div id="signup" class="page">
+                <h2>Signup</h2>
+                <div id="signup-success" class="success-message"></div>
+                <div id="signup-error" class="error-message"></div>
+                <form id="signup-form" onsubmit="signup(event)">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Signup</button>
+                </form>
+            </div>
+            <div id="profile" class="page">
+                <h2>Profile</h2>
+                <button onclick="logout()">Logout</button>
+                <div id="profile-details"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
